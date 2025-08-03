@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ChatInput = ({ input, setInput, handleSend, loading }) => (
-  <div className="chatsinput flex justify-center w-5/6 drop-shadow-md h-auto p-2">
+  <div className="chatsinput flex justify-center md:w-5/6 w-full drop-shadow-md h-auto p-2">
     <textarea
       placeholder="Type your message here..."
       rows={1}

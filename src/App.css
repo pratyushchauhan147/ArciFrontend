@@ -1,3 +1,31 @@
-.homebg{
-    background-image: url('../public/bg.png');
+/* ...existing code... */
+
+/* Reduce scrollbar width for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust width as needed */
 }
+
+/* Optional: Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* Hide scrollbars for small screens */
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  /* For Firefox */
+  html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+}
+.back {
+  background-image: url('../public/housemap.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
